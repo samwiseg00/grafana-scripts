@@ -292,7 +292,7 @@ if __name__ == "__main__":
         help='Get TV shows on today')
 
     parser.add_argument("--queue", action='store_true',
-        help='Get movies in queue')
+        help='Get TV shows in queue')
 
     opts = parser.parse_args()
 

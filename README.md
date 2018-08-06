@@ -18,9 +18,7 @@ Requirements /w install links: [Grafana](http://docs.grafana.org/installation/),
 1. Click the + on your menu and click import. Using the .json provided in this repo, paste it in and customize as you like.
 
 ## Scripts
-Make a copy of `configuration.example.py` to `configuration.py`.
-
-`sonarr.py` Gathers data from Sonarr and pushes it to influxdb. Switches are mandatory.
+`sonarr.py` Gathers data from Sonarr and pushes it to influxdb.
 - Notes:
   - You cannot stack the arguments. ie. `sonarr.py --missing --queue`
   - Arguments are mandatory
@@ -35,7 +33,7 @@ optional arguments:
                         Get missing TV shows in X pass days
   --upcoming            Get upcoming TV shows
   --today               Get TV shows on today
-  --queue               Get movies in queue
+  --queue               Get TV shows in queue
 ```
 
 `radarr.py` Gathers data from Radarr and pushes it to influxdb
